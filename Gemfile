@@ -1,6 +1,6 @@
 source :rubygems
 gem "sinatra"
-gem "datamapper"
+gem "data_mapper"
 gem "pg",:group =>:production
 gem "slim"
 gem "sass"
