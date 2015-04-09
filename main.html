@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Just Do It</title>
+      <link href="/styles.css" media="screen, projection" rel="stylesheet" />
+      <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+   </head>
+   <body>
+      <h1 class="logo">Just Do It</h1>
+      <form action="/new/list" class="new" method="POST"><input name="list[name]" type="text" /><input type="submit" value="+List" /></form>
+      <ul class="lists">
+         <li class="list">
+            <h2>S</h2>
+            <form action="/2" class="new" method="POST"><input name="task[name]" type="text" /></form>
+            <ul class="tasks"></ul>
+            <form action="/list/2" class="delete" method="POST"><input name="_method" type="hidden" value="DELETE" /><input type="submit" value="&times" /></form>
+         </li>
+         <li class="list">
+            <h2>Test</h2>
+            <form action="/1" class="new" method="POST"><input name="task[name]" type="text" /></form>
+            <ul class="tasks">
+               <li class="task" id="2">
+                  dtaesdte
+                  <form action="/task/2" class="update" method="POST"><input name="_method" type="hidden" value="PUT" /><input title="Complete Task" type="submit" value="  " /></form>
+                  <form action="/task/2" class="delete" method="POST"><input name="_method" type="hidden" value="DELETE" /><input title="Delete Task" type="submit" value="&times" /></form>
+               </li>
+            </ul>
+            <form action="/list/1" class="delete" method="POST"><input name="_method" type="hidden" value="DELETE" /><input type="submit" value="&times" /></form>
+         </li>
+         <li class="list">
+            <h2>Y</h2>
+            <form action="/3" class="new" method="POST"><input name="task[name]" type="text" /></form>
+            <ul class="tasks"></ul>
+            <form action="/list/3" class="delete" method="POST"><input name="_method" type="hidden" value="DELETE" /><input type="submit" value="&times" /></form>
+         </li>
+      </ul>
+   </body>
+</html>

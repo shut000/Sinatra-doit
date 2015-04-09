@@ -16,7 +16,7 @@ $grey: #999;
 	@include button($orange);
 }
 
-.list h1{
+.list h2{
 	color: $orange;
 }
 
@@ -32,6 +32,9 @@ $grey: #999;
 	padding: 2px 0 2px 28px;
 	border-bottom: dotted 1px #ccc;
 }
+form.new{
+
+}
 form.update{
 	position: absolute;
 	bottom: 2px;
@@ -39,7 +42,7 @@ form.update{
 }
 form.update input{
 	background: white;
-	color: white;
+	color: orange;
 	padding: 0 2px;
 	border: solid 1px gray;
 	cursor: pointer;
